@@ -1,0 +1,24 @@
+configuration {
+  display-drun: ">";
+  drun-displayu-format: "{name}";
+  font: "CommitMono Nerd Font Mono Medium 15";
+  icon-theme: "Papirus";
+  //show-icons: true;
+  modi: "drun";
+
+  calc {
+    calc-command: "echo "{result}" | wl-copy";
+    terse: false;
+    no-history: true;
+    no-persist-history: true;
+    automatic-save-to-history: false;
+    calc-command-history: false;
+    calc-error-color: "#ff1744";
+  }
+}
+
+@theme "/themes/monochrome.rasi"
+
+listview {
+	enabled: false;
+}
