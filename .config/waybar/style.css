@@ -1,0 +1,100 @@
+/*@define-color bg #1E2326;
+@define-color fg #D3C6AA;*/
+@define-color bg #080808;
+@define-color fg #a6a6a6;
+@define-color urgent #f52a2a;
+
+* {
+	padding: 0;
+    margin: 0;
+	border: none;
+    font-family: "CommitMono Nerd Font";
+	min-height: 0;
+	box-shadow: none;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+tooltip {
+    background: #1a1a1a;
+}
+
+tooltip label {
+    padding: 2px;
+    color: #FFFFFF;
+}
+
+#waybar {
+    background: alpha(@bg, 0.00);
+    /*border-bottom: 2px solid #d9ba73;*/
+}
+
+#workspaces button.urgent {
+    color: @urgent;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    transition: all 200ms ease-in-out;
+    min-width: 0px;
+    color: alpha(@fg, 0.6);
+    margin: 6px 0;
+}
+
+#workspaces button.empty {
+    color: alpha(@fg, 0.25);
+}
+
+#workspaces button.visible {
+    color: #ffffff;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    text-shadow:
+    1px  1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px -1px 0 #ffffff;
+    color: @bg;
+}
+
+#pulseaudio, #cpu, #tray, #memory, #clock {
+    color: #ffffff;
+    color: @fg;
+}
+
+#pulseaudio, #cpu, #memory, #submap {
+    margin: 0 8px;
+}
+
+#tray {
+    margin: 0px 10px;
+}
+
+#clock {
+    color: #e09d28;
+    /*text-decoration: underline;*/
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 0px 10px;
+    transition: all 150ms ease-in-out;
+}
+
+#clock:hover {
+    background-color: alpha(#e09d28, 0.15);
+}
+
+#cpu {
+    margin-left: 8px;
+}
+
+#memory {
+    margin-right: 5px;
+}
