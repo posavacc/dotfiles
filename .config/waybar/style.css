@@ -27,7 +27,8 @@ tooltip label {
 }
 
 #waybar {
-    background: alpha(@bg, 0.00);
+    /* background: alpha(@bg, 0.00); */
+    background: #000000;
     /*border-bottom: 2px solid #d9ba73;*/
 }
 

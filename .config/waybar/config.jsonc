@@ -3,7 +3,7 @@
 	"margin": "0 0 0 0",
 	"height": 28,
 	"modules-left": [
-		"niri/workspaces",
+		"hyprland/workspaces",
 		"tray"
 	],
 	"modules-center": [

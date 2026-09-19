@@ -25,3 +25,5 @@ alias vi="nvim"
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 export PATH="$PATH:/home/breno/.cargo/bin/"
+
+export PATH=$PATH:/home/breno/.spicetify

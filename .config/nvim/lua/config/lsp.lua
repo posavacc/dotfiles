@@ -31,6 +31,14 @@ vim.lsp.config("clangd", {
     capabilities = capabilities,
 })
 
+vim.lsp.config("gdscript", {
+    capabilities = capabilities,
+    cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+    filetypes = { "gdscript" },
+    root_markers = { "project.godot" },
+})
+
+vim.lsp.enable("gdscript")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("clangd")
