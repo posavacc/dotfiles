@@ -15,7 +15,6 @@ return {
     end,
 }
 
-
 return {
     {
         "kdheepak/monochrome.nvim",

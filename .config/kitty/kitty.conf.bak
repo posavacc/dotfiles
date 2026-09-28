@@ -73,6 +73,27 @@ confirm_os_window_close 0
 # color5   #7a7a7a
 # color13  #d0d0d0
 #
+
+# red / danger
+# color1   #4a4a4a
+# color9   #686868
+
+# green
+# color2   #5c5c5c
+# color10  #a6a6a6
+
+# yellow / warning
+# color3   #666666
+# color11  #b0b0b0
+
+# blue / highlight
+# color4   #707070
+# color12  #b8b8b8
+
+# magenta / pink
+# color5   #7a7a7a
+# color13  #d0d0d0
+
 # cyan
 # color6   #848484
 # color14  #c0c0c0
@@ -80,3 +101,20 @@ confirm_os_window_close 0
 # white / fg
 # color7   #a6a6a6
 # color15  #e0e0e0
+
+
+# BEGIN_KITTY_FONTS
+#font_family      family='FiraCode Nerd Font Mono' postscript_name=FiraCodeNFM-Reg
+#bold_font        auto
+#italic_font      auto
+#bold_italic_font auto
+# END_KITTY_FONTS
+
+
+# BEGIN_KITTY_THEME
+# Aquarium Dark
+include current-theme.conf
+# END_KITTY_THEME
+background            #080808
+foreground            #a6a6a6
+>>>>>>> origin/main
