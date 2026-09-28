@@ -1,0 +1,4 @@
+hl.on("hyprland.start", function ()
+  hl.exec_cmd("noctalia")
+  hl.dispatch(hl.dsp.exec_cmd("hyprctl switchxkblayout teclado-gamer-husky-hailstrom 1"))
+end)

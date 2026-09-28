@@ -1,0 +1,7 @@
+require("config.binds")
+require("config.devices")
+require("config.style")
+require("config.rules")
+require("config.autostart")
+require("config.misc")
+require("config.animations")
