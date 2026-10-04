@@ -19,12 +19,11 @@ bindkey '^ ' autosuggest-accept
 
 alias vi="nvim"
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
-alias vini="sudo vim /etc/nixos/configuration.nix"
 
 export PATH="$PATH:/home/breno/.cargo/bin/"
 
 export PATH=$PATH:/home/breno/.spicetify
 
-# if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-#     exec niri
-# fi
+if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+	exec start-hyprland
+fi

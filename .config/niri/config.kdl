@@ -1,6 +1,8 @@
 
 prefer-no-csd
 
+// switch to colemak dh
+spawn-at-startup "niri" "msg" "action" "switch-layout" "1"
 spawn-at-startup "waybar"
 spawn-at-startup "noctalia"
 // spawn-at-startup "hyprpaper"
@@ -94,23 +96,23 @@ layout {
     }
 
     border {
-        on
+        off
 
-        width 0
+        width 2
         // active-color "#e09d28ba"
-        active-color "a6a6a6ff"
-        // active-color "#bb86fc"
+        // active-color "a6a6a6ff"
+        active-color "#bb86fc"
         inactive-color "#080808aa"
 
         urgent-color "#9b0000"
     }
 
     shadow {
-        on
+        off
 
         softness 10
 
-        spread 2
+        spread 1
 
         offset x=0 y=0
 

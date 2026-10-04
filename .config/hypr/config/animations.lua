@@ -9,9 +9,9 @@ hl.animation({ leaf = "global",        enabled = true, speed = 6,   bezier = "de
 
 hl.animation({ leaf = "border",        enabled = true, speed = 4,   bezier = "easeOutQuint" })
 
-hl.animation({ leaf = "windows",       enabled = true, speed = 3.0, bezier = "easeOutQuint", style = "popin" })
+hl.animation({ leaf = "windows",       enabled = true, speed = 3.0, bezier = "easeOutQuint"})
 hl.animation({ leaf = "windowsIn",     enabled = true, speed = 2.5, bezier = "easeOutQuint", style = "popin" })
-hl.animation({ leaf = "windowsOut",    enabled = true, speed = 2.5, bezier = "easeOutQuint", style = "popin" })
+hl.animation({ leaf = "windowsOut",    enabled = true, speed = 2.5, bezier = "easeOutQuint", style = "popin 60%" })
 
 hl.animation({ leaf = "fadeIn",        enabled = true, speed = 1.5, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeOut",       enabled = true, speed = 1.2, bezier = "almostLinear" })
