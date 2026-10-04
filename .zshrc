@@ -25,5 +25,5 @@ export PATH="$PATH:/home/breno/.cargo/bin/"
 export PATH=$PATH:/home/breno/.spicetify
 
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	exec niri
+	exec start-hyprland
 fi
