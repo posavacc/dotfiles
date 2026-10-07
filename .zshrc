@@ -13,6 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 eval "$(starship init zsh)"
 
 bindkey '^ ' autosuggest-accept
@@ -23,7 +27,3 @@ alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 export PATH="$PATH:/home/breno/.cargo/bin/"
 
 export PATH=$PATH:/home/breno/.spicetify
-
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	exec start-hyprland
-fi

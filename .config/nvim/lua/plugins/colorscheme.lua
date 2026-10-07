@@ -77,7 +77,8 @@ return {
             },
 
             colors = {
-                const = "#e09d28",
+                const = "#89b4fa",
+                -- const = "#e09d28",
                 -- const = "#bb86fc",
                 -- const = "#ffffff",
             }

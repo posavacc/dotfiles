@@ -1,12 +1,13 @@
 local terminal = "kitty"
-
 local mainMod = "SUPER"
+
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("./.config/waybar/scripts/launch.sh"))
 
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("firefox"))
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("zen-browser"))
 
 -- SCROLLING --
 hl.bind(mainMod .. " + h", hl.dsp.layout("focus left"))
@@ -58,7 +59,9 @@ hl.bind(mainMod .. " + SHIFT + M", function()
     hl.dispatch(hl.dsp.layout("colresize " .. width))
 end)
 
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z --clipboard-only"))
+
 
 hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen"))
 

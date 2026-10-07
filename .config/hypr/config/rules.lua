@@ -32,10 +32,10 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "1.0 width firefox",
+    name = "1.0 width zen browser",
     match = {
-        class = "^firefox$",
-        title = "^Mozilla Firefox$",
+        class = "^zen$",
+        title = "^Zen Browser$",
     },
 
     scrolling_width = 1.0
