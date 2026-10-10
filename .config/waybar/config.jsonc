@@ -1,10 +1,13 @@
 {
 	"layer": "top",
-	"margin": "0 0 0 0",
-	"height": 28,
+	"margin": "6 6 0 6",
+	// "margin": "0 0 0 0",
+	"height": 16,
 	"modules-left": [
-		"hyprland/workspaces",
-		"hyprland/window"
+		"niri/workspaces",
+		"niri/window"
+		// "hyprland/workspaces",
+		// "hyprland/window"
 	],
 	"modules-center": [
 		"clock"
@@ -70,6 +73,14 @@
 	},
 
 	"hyprland/window": {
+		"format": " > {}",
+		"rewrite": {
+			" > ": ""
+		},
+		"separate-outputs": true
+	},
+
+	"niri/window": {
 		"format": " > {}",
 		"rewrite": {
 			" > ": ""

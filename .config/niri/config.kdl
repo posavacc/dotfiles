@@ -1,10 +1,11 @@
-
 prefer-no-csd
 
 // switch to colemak dh
 spawn-at-startup "niri" "msg" "action" "switch-layout" "1"
 spawn-at-startup "waybar"
-spawn-at-startup "noctalia"
+spawn-at-startup "mako"
+spawn-at-startup "awww-daemon"
+// spawn-at-startup "noctalia"
 // spawn-at-startup "hyprpaper"
 
 cursor {
@@ -22,7 +23,7 @@ input {
         xkb {
             layout "br,us"
             variant ",colemak_dh_iso"
-            options "grp:alt_shift_toggle"
+            options "grp:alt_shift_toggle,caps:escape"
         }
         repeat-delay 250
         repeat-rate 75
@@ -64,12 +65,12 @@ output "DP-2" {
 }
 
 layout {
-    gaps 8
+    gaps 6
     // struts {
-    //     left -4
-    //     right -4
-    //     top -4
-    //     bottom -4
+    //     left 8
+    //     right 8
+    //     top 8
+    //     bottom 8
     // }
 
     center-focused-column "never"
@@ -80,7 +81,6 @@ layout {
         proportion 0.5
         proportion 0.33333
         proportion 0.66667
-
     }
 
     default-column-width { proportion 0.5; }
@@ -100,9 +100,9 @@ layout {
 
         width 2
         // active-color "#e09d28ba"
-        // active-color "a6a6a6ff"
-        active-color "#bb86fc"
-        inactive-color "#080808aa"
+        active-color "a6a6a6ff"
+        // active-color "#bb86fc"
+        inactive-color "#3f3f3fff"
 
         urgent-color "#9b0000"
     }
@@ -133,7 +133,7 @@ hotkey-overlay {
 screenshot-path null
 
 animations {
-
+    on
 }
 
 // cool proof of concept, maybe ill come back later
@@ -227,10 +227,10 @@ window-rule {
 
 window-rule {
     match is-active=false
-    /-shadow {
+    shadow {
         off
     }
-    opacity 0.97
+    opacity 0.95
 }
 
 window-rule {
@@ -288,7 +288,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="firefox"
+    match app-id="zen"
 
     open-maximized true
 }
@@ -350,7 +350,7 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     //Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+X hotkey-overlay-title="Rofi calc" { spawn-sh "rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"; }
-    Mod+Q { spawn "firefox"; }
+    Mod+Q { spawn "zen-browser"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Shift+W { spawn-sh "/home/breno/.config/waybar/scripts/launch.sh"; }
 

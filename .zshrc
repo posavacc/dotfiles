@@ -24,6 +24,10 @@ bindkey '^ ' autosuggest-accept
 alias vi="nvim"
 alias dot="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
+mkcd() {
+	mkdir -p "$1" && cd "$1"
+}
+
 export PATH="$PATH:/home/breno/.cargo/bin/"
 
 export PATH=$PATH:/home/breno/.spicetify
