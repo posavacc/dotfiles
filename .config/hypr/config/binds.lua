@@ -27,17 +27,15 @@ hl.bind(mainMod .. " + CTRL + l", hl.dsp.layout("consume_or_expel next"))
 hl.bind(mainMod .. " + e", hl.dsp.layout("colresize +conf"))
 
 -- DWINDLE --
---[[
-hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
-
-hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
-hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
-hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
-hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
-]]
+-- hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
+-- hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
+-- hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
+-- hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
+--
+-- hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
+-- hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
+-- hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
+-- hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 
 hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen())
 
@@ -45,6 +43,7 @@ hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + M", function()
     hl.dispatch(hl.dsp.focus({ monitor = hl.get_active_monitor().id - 1 }))
 end)
+
 hl.bind(mainMod .. " + SHIFT + M", function()
     local window = hl.get_active_window()
     if window == nil then return end
@@ -60,10 +59,8 @@ hl.bind(mainMod .. " + SHIFT + M", function()
 end)
 
 -- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
+-- hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z --clipboard-only"))
-
-
-hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen"))
 
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + x", hl.dsp.exec_cmd("rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"))
@@ -95,4 +92,5 @@ for i = 1, smw.get_amount_of_workspaces() do
     local n = tostring(i)
     hl.bind(mainMod .. " +" .. n, smw.workspace(n))
     hl.bind(mainMod .. " + SHIFT +" .. n, smw.move_to_workspace_silent(n))
+    hl.bind(mainMod .. " + CTRL +" .. n, smw.move_to_workspace(n))
 end

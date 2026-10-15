@@ -2,11 +2,10 @@ prefer-no-csd
 
 // switch to colemak dh
 spawn-at-startup "niri" "msg" "action" "switch-layout" "1"
+
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "awww-daemon"
-// spawn-at-startup "noctalia"
-// spawn-at-startup "hyprpaper"
 
 cursor {
     xcursor-theme "Adwaita"
@@ -65,7 +64,7 @@ output "DP-2" {
 }
 
 layout {
-    gaps 6
+    gaps 0
     // struts {
     //     left 8
     //     right 8
@@ -99,9 +98,8 @@ layout {
         off
 
         width 2
-        // active-color "#e09d28ba"
-        active-color "a6a6a6ff"
-        // active-color "#bb86fc"
+        active-color "F6CE4Eff"
+        // active-color "#89b4fa"
         inactive-color "#3f3f3fff"
 
         urgent-color "#9b0000"
@@ -122,7 +120,7 @@ layout {
 
 overview {
     zoom 0.5
-    backdrop-color "#080808"
+    backdrop-color "#171717"
 }
 
 
@@ -336,8 +334,8 @@ layer-rule {
     }
 }
 
-layer-rule {
-    match namespace="^hyprpaper$"
+/-layer-rule {
+    match namespace="^awww-daemon$"
     place-within-backdrop true
 }
 

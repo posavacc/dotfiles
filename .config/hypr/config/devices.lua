@@ -5,6 +5,12 @@ hl.monitor({
     scale    = "1",
 })
 
+hl.monitor({
+    output   = "HDMI-A-1",
+    mode     = "1600x900@60",
+    scale    = "1",
+})
+
 
 hl.config({
     input = {

@@ -1,27 +1,30 @@
 {
 	"layer": "top",
-	"margin": "6 6 0 6",
-	// "margin": "0 0 0 0",
-	"height": 16,
+	"position": "bottom",
+	// "margin": "6 6 0 6",
+	"margin": "0 0 0 0",
+	"height": 24,
 	"modules-left": [
-		"niri/workspaces",
-		"niri/window"
+		// "niri/workspaces",
+		// "niri/window"
 		// "hyprland/workspaces",
 		// "hyprland/window"
+		"sway/workspaces",
+		"sway/window"
 	],
 	"modules-center": [
+		// "ext/workspaces"
 		"clock"
-		//"ext/workspaces"
 	],
 	"modules-right": [
 		"tray",
 		"pulseaudio",
 		"cpu",
-		"memory"
+		"memory",
 	],
 	"clock": {
-		"format-alt": "{:%H:%M}",
-		"format": "{:%H:%M - %d %b}",
+		"format": "{:%H:%M}",
+		"format-alt": "{:%H:%M - %d %b}",
 		"tooltip-format": "{:%Y-%m-%d}"
 	},
 	"tray": {
@@ -58,19 +61,20 @@
 		"max-length": 10
 	},
 
-	"hyprland/workspaces": {
-		// "active-only":
-		// "hide-active":
-		// "all-outputs":
-		//"format": "{icon}",
-		//"format-icons": {
-			//"active": "",
-			//"visible": "",
-			//"default": "",
-			//"default": ""
-			//"empty": ""
-		//}
-	},
+	// "hyprland/workspaces": {
+	// 	"format": "{id} {windows}",
+	// 	"persistent-workspaces": true,
+	// 	"format-window-separator": " ",
+	// 	"window-rewrite-default": "",
+	// 	"window-rewrite": {
+	// 		"class<firefox>": "",
+	// 		"class<kitty>": " ",
+	// 		"class<code>": "󰨞",
+	// 		"class<discord>": "",
+	// 		"class<spotify>": "",
+	// 		"class<org.telegram.desktop>": ""
+	// 	}
+	// },
 
 	"hyprland/window": {
 		"format": " > {}",
@@ -81,6 +85,14 @@
 	},
 
 	"niri/window": {
+		"format": " > {}",
+		"rewrite": {
+			" > ": ""
+		},
+		"separate-outputs": true
+	},
+
+	"sway/window": {
 		"format": " > {}",
 		"rewrite": {
 			" > ": ""

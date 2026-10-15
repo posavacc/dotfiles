@@ -50,11 +50,11 @@ hl.window_rule({
     scrolling_width = 1.0
 })
 
-hl.window_rule({
-    name = "no border when only",
-    match = { workspace = "w[t1]" },
-    border_size = 0,
-})
+-- hl.window_rule({
+--     name = "no border when only",
+--     match = { workspace = "w[t1]" },
+--     border_size = 0,
+-- })
 
 hl.layer_rule({
     name = "noctalia blur",
