@@ -27,12 +27,17 @@ vim.lsp.config("rust_analyzer", {
     capabilities = capabilities,
 })
 
+vim.lsp.config("ols", {
+    capabilities = capabilities,
+})
+
 vim.lsp.config("clangd", {
     capabilities = capabilities,
 })
 
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("ols")
 vim.lsp.enable("clangd")
 
 vim.api.nvim_create_autocmd("LspAttach", {

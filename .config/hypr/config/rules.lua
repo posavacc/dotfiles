@@ -1,9 +1,15 @@
-local suppressMaximizeRule = hl.window_rule({
+hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
     name  = "suppress-maximize-events",
     match = { class = ".*" },
 
     suppress_event = "maximize",
+})
+
+hl.window_rule({
+    name = "maximized border",
+    match = { fullscreen_state_internal = 1 },
+    border_size = 0
 })
 
 hl.window_rule({

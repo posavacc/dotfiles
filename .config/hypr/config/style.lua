@@ -1,14 +1,14 @@
 hl.config({
     general = {
-        gaps_in  = 0,
-        gaps_out = 0,
+        gaps_in  = 3,
+        gaps_out = 6,
 
-        border_size = 0,
+        border_size = 2,
 
         col = {
             -- active_border   = { colors = {"#dedede", "#94c1e0"}, angle = 270 },
             -- active_border = "#94c1e0",
-            active_border = "#c0c0c0ff",
+            active_border = "#F6CE4E",
             -- active_border = "#a6a6a6ff",
             inactive_border = "#3d3d3dff",
         },
@@ -17,7 +17,7 @@ hl.config({
 
         allow_tearing = false,
 
-        layout = "scrolling",
+        layout = "dwindle",
     },
 
     decoration = {

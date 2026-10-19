@@ -51,7 +51,7 @@ window#waybar {
     min-width: 0px;
     color: alpha(@fg, 0.8);
     background: alpha(@fg, 0.2);
-    margin: 4px 0px;
+    margin: 4px 1px;
 }
 
 #workspaces button.empty {

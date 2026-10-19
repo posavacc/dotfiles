@@ -5,12 +5,12 @@
 	"margin": "0 0 0 0",
 	"height": 24,
 	"modules-left": [
-		// "niri/workspaces",
-		// "niri/window"
+		"niri/workspaces",
+		"niri/window"
 		// "hyprland/workspaces",
 		// "hyprland/window"
-		"sway/workspaces",
-		"sway/window"
+		// "sway/workspaces",
+		// "sway/window"
 	],
 	"modules-center": [
 		// "ext/workspaces"
