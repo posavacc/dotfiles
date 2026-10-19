@@ -237,7 +237,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="kitty"
+    match app-id="ghostty"
 
     background-effect {
         blur true
@@ -246,7 +246,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="floating-kitty"
+    match app-id="floating.ghostty"
 
     open-floating true
 
@@ -343,8 +343,8 @@ binds {
 
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+Shift+T  { spawn "kitty" "--class='floating-kitty'"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Shift+T  { spawn "ghostty" "--class=floating.ghostty"; }
     Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     //Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+X hotkey-overlay-title="Rofi calc" { spawn-sh "rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"; }

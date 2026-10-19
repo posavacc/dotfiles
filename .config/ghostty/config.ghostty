@@ -1,0 +1,54 @@
+# ── Fonte ──────────────────────────────
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 16
+# "zero" = zero com barra/ponto
+font-feature = zero
+
+# ── Janela ─────────────────────────────
+window-decoration = none
+background-opacity = 1.0
+confirm-close-surface = false
+
+# ── Cursor ─────────────────────────────
+cursor-style = block
+cursor-style-blink = false
+# mantém o cursor como bloco mesmo sem foco (o Ghostty usa oco por padrão)
+# não há opção direta para isso; veja a nota abaixo
+
+# ── Mouse ──────────────────────────────
+mouse-hide-while-typing = false
+
+# ── Shell integration ──────────────────
+# no-cursor: mantém integração, mas não mexe no cursor
+shell-integration = detect
+shell-integration-features = no-cursor
+
+# ── Áudio ──────────────────────────────
+bell-features = no-audio
+
+# ── Cores (Koda Palette) ───────────────
+background = #171717
+foreground = #a6a6a6
+selection-foreground = #c4c4c4
+selection-background = #1a1a1a
+cursor-color = #c4c4c4
+cursor-text = #080808
+
+palette = 0=#000000
+palette = 8=#3d3d3d
+palette = 7=#a6a6a6
+palette = 15=#e0e0e0
+
+# Cores ANSI comentadas no original (descomente se quiser)
+# palette = 1=#4a4a4a
+# palette = 9=#686868
+# palette = 2=#5c5c5c
+# palette = 10=#a6a6a6
+# palette = 3=#666666
+# palette = 11=#b0b0b0
+# palette = 4=#707070
+# palette = 12=#b8b8b8
+# palette = 5=#7a7a7a
+# palette = 13=#d0d0d0
+# palette = 6=#848484
+# palette = 14=#c0c0c0
