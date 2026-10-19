@@ -5,8 +5,7 @@
 	"margin": "0 0 0 0",
 	"height": 24,
 	"modules-left": [
-		"niri/workspaces",
-		"niri/window"
+		"niri/workspaces"
 		// "hyprland/workspaces",
 		// "hyprland/window"
 		// "sway/workspaces",
@@ -14,13 +13,14 @@
 	],
 	"modules-center": [
 		// "ext/workspaces"
-		"clock"
+		"niri/window"
 	],
 	"modules-right": [
 		"tray",
 		"pulseaudio",
 		"cpu",
 		"memory",
+		"clock"
 	],
 	"clock": {
 		"format": "{:%H:%M}",
@@ -85,9 +85,9 @@
 	},
 
 	"niri/window": {
-		"format": " > {}",
+		"format": "{}",
 		"rewrite": {
-			" > ": ""
+			"": ""
 		},
 		"separate-outputs": true
 	},
