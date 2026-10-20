@@ -27,3 +27,9 @@ vim.keymap.set("n", "<leader>{", "a {<CR>}<ESC>O")
 
 vim.keymap.set("v", "<leader>/", "gc", { remap = true })
 vim.keymap.set("n", "<leader>/", "gcc", { remap = true })
+
+-- move highlighted text
+vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("x", "<leader>p", [["_dP]])

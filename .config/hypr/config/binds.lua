@@ -1,4 +1,4 @@
-local terminal = "kitty"
+local terminal = "ghostty"
 local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("./.config/waybar/scripts/launch.sh"))
@@ -32,14 +32,12 @@ hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
 
-hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen({ mode = "maximized" }))
-
 hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 
-hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen())
+hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen())
 
 -- Two monitors so this is fine
 hl.bind(mainMod .. " + M", function()
@@ -47,17 +45,17 @@ hl.bind(mainMod .. " + M", function()
 end)
 
 hl.bind(mainMod .. " + SHIFT + M", function()
-    local window = hl.get_active_window()
-    if window == nil then return end
-    local size = window.size.x / window.monitor.width
-
-    local width = 0.5
-    if 0.5 - size < 0.0 then
-        width = 1.0
-    end
+    -- local window = hl.get_active_window()
+    -- if window == nil then return end
+    -- local size = window.size.x / window.monitor.width
+    --
+    -- local width = 0.5
+    -- if 0.5 - size < 0.0 then
+    --     width = 1.0
+    -- end
 
     hl.dispatch(hl.dsp.window.move({ monitor = hl.get_active_monitor().id - 1 }))
-    hl.dispatch(hl.dsp.layout("colresize " .. width))
+    -- hl.dispatch(hl.dsp.layout("colresize " .. width))
 end)
 
 -- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("noctalia msg screenshot-region"))

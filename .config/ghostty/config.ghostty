@@ -16,7 +16,7 @@ cursor-style-blink = false
 # não há opção direta para isso; veja a nota abaixo
 
 # ── Mouse ──────────────────────────────
-mouse-hide-while-typing = false
+mouse-hide-while-typing = true
 
 # ── Shell integration ──────────────────
 # no-cursor: mantém integração, mas não mexe no cursor
