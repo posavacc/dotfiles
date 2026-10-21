@@ -120,7 +120,7 @@ layout {
 
 overview {
     zoom 0.5
-    backdrop-color "#171717"
+    backdrop-color "#353535"
 }
 
 

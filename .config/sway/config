@@ -11,7 +11,7 @@ set $down j
 set $up k
 set $right l
 
-set $term kitty
+set $term ghostty
 set $browser zen-browser
 
 set $menu rofi -show drun
@@ -62,7 +62,7 @@ set $menu rofi -show drun
   input type:keyboard {
       xkb_layout  "br,us"
       xkb_variant ",colemak_dh_iso"
-      xkb_options "grp:alt_shift_toggle"
+      xkb_options "grp:alt_shift_toggle,caps:escape"
 
       repeat_rate  75
       repeat_delay 250
@@ -220,7 +220,7 @@ bindsym $mod+r mode "resize"
     bindsym $mod+Shift+s exec hyprshot -m region -z --clipboard-only
 
 # Border
-client.focused           #F6CE4E #F6CE4E #171717 #ffffff #F6CE4E
+client.focused           #F6CE4E #F6CE4E #171717 #a6a6a6 #F6CE4E
 client.focused_inactive  #a6a6a6 #171717 #a6a6a6 #ffffff #a6a6a6
 client.unfocused         #3d3d3d #171717 #6d6d6d #d65d0e #3d3d3d
 client.urgent            #cc241d #171717 #ebdbb2 #98971a #cc241d
