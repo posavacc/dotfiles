@@ -131,7 +131,7 @@ hotkey-overlay {
 screenshot-path null
 
 animations {
-    on
+    off
 }
 
 // cool proof of concept, maybe ill come back later

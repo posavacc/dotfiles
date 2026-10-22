@@ -36,9 +36,7 @@ vim.opt.tabstop = 4
 
 vim.opt.fillchars = { eob = ' ' }
 
---Aquele bagulho de abrir e fechar parenteses e etc
---vim.keymap.set('i', '(', '()<Esc>i')
---vim.keymap.set('i', '[', '[]<Esc>i')
---vim.keymap.set('i', '{', '{}<Esc>i')
---vim.keymap.set('i', "'", "''<Esc>i")
---vim.keymap.set('i', '"', '""<Esc>i')
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "odin",
+  callback = function() vim.treesitter.start() end,
+})
