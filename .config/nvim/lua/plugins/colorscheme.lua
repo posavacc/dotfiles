@@ -5,31 +5,6 @@ return {
         lazy = false,
         priority = 1000,
         config = function()
-            vim.api.nvim_create_autocmd("ColorScheme", {
-                pattern = "gruber-darker",
-                callback = function()
-                    local set = vim.api.nvim_set_hl
-
-                    -- chamadas de função (WindowShouldClose, BeginDrawing...)
-                    set(0, "@function.call", { fg = "#96a6c8" })   -- niagara (azulado)
-                    set(0, "@function",      { fg = "#96a6c8" })
-
-                    -- pacote/módulo (o "rl")
-                    set(0, "@module", { fg = "#95a99f" })          -- quartz (cinza esverdeado)
-
-                    -- campos e propriedades
-                    set(0, "@variable.member", { fg = "#cc8c3c" }) -- brown
-                    set(0, "@property",        { fg = "#cc8c3c" })
-
-                    -- parênteses, chaves, vírgulas
-                    set(0, "@punctuation.bracket",   { fg = "#7c7c7c" })
-                    set(0, "@punctuation.delimiter", { fg = "#7c7c7c" })
-
-                    -- variáveis normais (player)
-                    set(0, "@variable", { fg = "#e4e4ef" })
-                end,
-            })
-
             vim.cmd.colorscheme("gruber-darker")
 
             -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -58,13 +33,7 @@ return {
             },
 
             colors = {
-                -- const = "#ffffff",
-                -- func = "#777777",
-                -- const = "#e09d28",
-                -- const = "#bb86fc",
-                -- const = "#89b4fa",
-                -- const = "#ffdd33",
-                const = "#F6CE4E",
+                const = "#F6CE4E"
             }
         })
 

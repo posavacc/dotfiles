@@ -64,7 +64,7 @@ output "DP-2" {
 }
 
 layout {
-    gaps 8
+    gaps 0
     // struts {
     //     left 8
     //     right 8
