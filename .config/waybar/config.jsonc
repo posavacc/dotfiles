@@ -58,7 +58,7 @@
 		"max-length": 10
 	},
 
-	"hyprland/submap": {
+	"niri/submap": {
 		"format": "submap: {}",
 		"always-on": true,
 		"default-submap": "default"

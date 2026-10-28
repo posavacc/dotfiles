@@ -229,6 +229,7 @@ default_border none
 default_border pixel 1
 
 # run on boot
+exec /home/breno/.cargo/bin/wcc /home/breno/.config/waybar/config.jsonc sway
 exec waybar
 exec awww-daemon
 

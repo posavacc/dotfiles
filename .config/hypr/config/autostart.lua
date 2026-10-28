@@ -1,5 +1,5 @@
 hl.on("hyprland.start", function ()
   hl.exec_cmd("awww-daemon")
-  hl.exec_cmd("waybar")
+  hl.exec_cmd("/home/breno/.cargo/bin/wcc /home/breno/.config/waybar/config.jsonc hyprland && waybar")
   hl.dispatch(hl.dsp.exec_cmd("hyprctl switchxkblayout teclado-gamer-husky-hailstrom 1"))
 end)

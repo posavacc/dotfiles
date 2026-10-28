@@ -38,6 +38,7 @@ hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 
 hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen())
+hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen())
 
 -- Two monitors so this is fine
 hl.bind(mainMod .. " + M", function()

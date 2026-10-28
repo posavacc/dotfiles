@@ -3,6 +3,7 @@ prefer-no-csd
 // switch to colemak dh
 spawn-at-startup "niri" "msg" "action" "switch-layout" "1"
 
+spawn-at-startup "/home/breno/.cargo/bin/wcc" "/home/breno/.config/waybar/config.jsonc" "niri"
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "awww-daemon"
