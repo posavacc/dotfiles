@@ -37,7 +37,7 @@ hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 
-hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen())
+hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen())
 
 -- Two monitors so this is fine
@@ -64,7 +64,7 @@ end)
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z --clipboard-only"))
 
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("rofi -show drun"))
-hl.bind(mainMod .. " + x", hl.dsp.exec_cmd("rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"))
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"))
 
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })

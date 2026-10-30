@@ -132,7 +132,7 @@ hotkey-overlay {
 screenshot-path null
 
 animations {
-    off
+    on
 }
 
 // cool proof of concept, maybe ill come back later
@@ -348,7 +348,7 @@ binds {
     Mod+Shift+T  { spawn "ghostty" "--class=floating.ghostty"; }
     Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     //Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Mod+X hotkey-overlay-title="Rofi calc" { spawn-sh "rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"; }
+    Mod+Return hotkey-overlay-title="Rofi calc" { spawn-sh "rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"; }
     Mod+Q { spawn "zen-browser"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Shift+W { spawn-sh "/home/breno/.config/waybar/scripts/launch.sh"; }

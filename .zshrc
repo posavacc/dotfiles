@@ -28,6 +28,10 @@ mkcd() {
 	mkdir -p "$1" && cd "$1"
 }
 
+carcd() {
+	cargo new "$1" && cd "$1"
+}
+
 export PATH="$PATH:/home/breno/.cargo/bin/"
 
 export PATH=$PATH:/home/breno/.spicetify

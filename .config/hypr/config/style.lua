@@ -8,7 +8,7 @@ hl.config({
         col = {
             -- active_border   = { colors = {"#dedede", "#94c1e0"}, angle = 270 },
             -- active_border = "#94c1e0",
-            active_border = "#F6CE4E",
+            active_border = "#a6a6a6",
             -- active_border = "#a6a6a6ff",
             inactive_border = "#3d3d3dff",
         },
@@ -24,7 +24,7 @@ hl.config({
         rounding       = 0,
         rounding_power = 2,
 
-        inactive_opacity = 0.97,
+        -- inactive_opacity = 0.97,
 
         shadow = {
             enabled      = false,
