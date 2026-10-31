@@ -31,7 +31,7 @@ window-inherit-working-directory = false
 keybind = ctrl+enter=unbind
 
 # ── Áudio ──────────────────────────────
-bell-features = no-audio
+bell-features = no-audio, no-title
 
 # ── Cores (Koda Palette) ───────────────
 
