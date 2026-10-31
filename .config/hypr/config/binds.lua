@@ -46,17 +46,17 @@ hl.bind(mainMod .. " + M", function()
 end)
 
 hl.bind(mainMod .. " + SHIFT + M", function()
-    -- local window = hl.get_active_window()
-    -- if window == nil then return end
-    -- local size = window.size.x / window.monitor.width
-    --
-    -- local width = 0.5
-    -- if 0.5 - size < 0.0 then
-    --     width = 1.0
-    -- end
+    local window = hl.get_active_window()
+    if window == nil then return end
+    local size = window.size.x / window.monitor.width
+
+    local width = 0.5
+    if 0.5 - size < 0.0 then
+        width = 1.0
+    end
 
     hl.dispatch(hl.dsp.window.move({ monitor = hl.get_active_monitor().id - 1 }))
-    -- hl.dispatch(hl.dsp.layout("colresize " .. width))
+    hl.dispatch(hl.dsp.layout("colresize " .. width))
 end)
 
 -- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
