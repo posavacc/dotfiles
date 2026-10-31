@@ -16,4 +16,4 @@ configuration {
 
 // 
 
-@theme "/themes/monochrome.rasi"
+@theme "/themes/zenbones.rasi"

@@ -1,9 +1,8 @@
-/*@define-color bg #1E2326;
-@define-color fg #D3C6AA;*/
-@define-color bg #080808;
-@define-color fg #a6a6a6;
-@define-color urgent #f52a2a;
-@define-color accent #F6CE4E;
+@define-color bg #1C1917;
+@define-color bg_alt #292523;
+@define-color fg #B4BDC3;
+@define-color urgent #DE6E7C;
+@define-color accent #B77E64;
 
 * {
 	padding: 0;
@@ -19,18 +18,16 @@
 }
 
 tooltip {
-    background: #1a1a1a;
+    background: @bg_alt;
 }
 
 tooltip label {
     padding: 2px;
-    color: #FFFFFF;
+    color: @fg;
 }
 
 #waybar {
-    /* background: alpha(@bg, 0.00); */
     background: alpha(@bg, 1.00);
-    /*border-bottom: 2px solid #d9ba73;*/
 }
 
 window#waybar {
@@ -41,7 +38,7 @@ window#waybar {
 }
 
 #workspaces button.urgent {
-    color: @fg;
+    color: @bg;
     background: @urgent;
 }
 
@@ -89,17 +86,13 @@ window#waybar {
 }
 
 #tray {
-    color: #ffffff;
+    color: @fg;
     margin: 0px 10px;
 }
 
 #clock {
-    /* color: #e09d28; */
-    /* color: #bb86fc; */
     color: @accent;
-    /* text-decoration: underline; */
     font-weight: 500;
-    /* margin-top: 4px; */
     border-radius: 10px;
     padding: 0px 8px;
     transition: all 150ms ease-in-out;
@@ -119,5 +112,5 @@ window#waybar {
 }
 
 #cpu:hover, #memory:hover, #pulseaudio:hover {
-    color: #e0e0e0;
+    color: @fg;
 }

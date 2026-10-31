@@ -10,34 +10,34 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("zen-browser"))
 
 -- SCROLLING --
--- hl.bind(mainMod .. " + h", hl.dsp.layout("focus left"))
--- hl.bind(mainMod .. " + l", hl.dsp.layout("focus right"))
--- hl.bind(mainMod .. " + k", hl.dsp.layout("focus up"))
--- hl.bind(mainMod .. " + j", hl.dsp.layout("focus down"))
---
--- hl.bind(mainMod .. " + SHIFT + h", hl.dsp.layout("swapcol l"))
--- hl.bind(mainMod .. " + SHIFT + l", hl.dsp.layout("swapcol r"))
---
--- hl.bind(mainMod .. " + SHIFT + k", hl.dsp.focus({ direction = "up" }))
--- hl.bind(mainMod .. " + SHIFT + j", hl.dsp.focus({ direction = "down" }))
---
--- hl.bind(mainMod .. " + CTRL + h", hl.dsp.layout("consume_or_expel prev"))
--- hl.bind(mainMod .. " + CTRL + l", hl.dsp.layout("consume_or_expel next"))
---
--- hl.bind(mainMod .. " + e", hl.dsp.layout("colresize +conf"))
+hl.bind(mainMod .. " + h", hl.dsp.layout("focus left"))
+hl.bind(mainMod .. " + l", hl.dsp.layout("focus right"))
+hl.bind(mainMod .. " + k", hl.dsp.layout("focus up"))
+hl.bind(mainMod .. " + j", hl.dsp.layout("focus down"))
+
+hl.bind(mainMod .. " + SHIFT + h", hl.dsp.layout("swapcol l"))
+hl.bind(mainMod .. " + SHIFT + l", hl.dsp.layout("swapcol r"))
+
+hl.bind(mainMod .. " + SHIFT + k", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. " + SHIFT + j", hl.dsp.focus({ direction = "down" }))
+
+hl.bind(mainMod .. " + CTRL + h", hl.dsp.layout("consume_or_expel prev"))
+hl.bind(mainMod .. " + CTRL + l", hl.dsp.layout("consume_or_expel next"))
+
+hl.bind(mainMod .. " + e", hl.dsp.layout("colresize +conf"))
 
 -- DWINDLE --
-hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
-
-hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
-hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
-hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
-hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
-
-hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen({ mode = "maximized" }))
+-- hl.bind(mainMod .. " + h", hl.dsp.focus({ direction = "left" }))
+-- hl.bind(mainMod .. " + l", hl.dsp.focus({ direction = "right" }))
+-- hl.bind(mainMod .. " + k", hl.dsp.focus({ direction = "up" }))
+-- hl.bind(mainMod .. " + j", hl.dsp.focus({ direction = "down" }))
+--
+-- hl.bind(mainMod .. " + SHIFT + h", hl.dsp.window.move({ direction = "left" }))
+-- hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
+-- hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
+-- hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
+--
+-- hl.bind(mainMod .. " + e", hl.dsp.window.fullscreen({ mode = "maximized" }))
 hl.bind(mainMod .. " + f", hl.dsp.window.fullscreen())
 
 -- Two monitors so this is fine

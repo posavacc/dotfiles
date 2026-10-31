@@ -1,29 +1,167 @@
-hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1} } })
-hl.curve("easeInOutCubic", { type = "bezier", points = { {0.65, 0.05}, {0.36, 1} } })
-hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1} } })
-hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1} } })
-hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1} } })
-hl.curve("snap",           { type = "bezier", points = { {0.2, 1},     {0.2, 1} } })
+-- hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1} } })
+-- hl.curve("easeInOutCubic", { type = "bezier", points = { {0.65, 0.05}, {0.36, 1} } })
+-- hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1} } })
+-- hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1} } })
+-- hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1} } })
+-- hl.curve("snap",           { type = "bezier", points = { {0.2, 1},     {0.2, 1} } })
+--
+-- hl.animation({ leaf = "global",        enabled = true, speed = 6,   bezier = "default" })
+--
+-- hl.animation({ leaf = "border",        enabled = true, speed = 4,   bezier = "easeOutQuint" })
+--
+-- hl.animation({ leaf = "windows",       enabled = true, speed = 1.5, bezier = "easeInOutCubic"})
+-- hl.animation({ leaf = "windowsIn",     enabled = true, speed = 1.5, bezier = "easeOutQuint", style = "slide" })
+-- hl.animation({ leaf = "windowsOut",    enabled = true, speed = 1.5, bezier = "easeOutQuint",   style = "slide" })
+--
+-- hl.animation({ leaf = "fadeIn",        enabled = true, speed = 1.5, bezier = "almostLinear" })
+-- hl.animation({ leaf = "fadeOut",       enabled = true, speed = 1.2, bezier = "almostLinear" })
+-- hl.animation({ leaf = "fade",          enabled = true, speed = 2.5, bezier = "quick" })
+--
+-- hl.animation({ leaf = "layers",        enabled = true, speed = 3,   bezier = "easeOutQuint" })
+-- hl.animation({ leaf = "layersIn",      enabled = true, speed = 3,   bezier = "easeOutQuint", style = "slide" })
+-- hl.animation({ leaf = "layersOut",     enabled = true, speed = 1.2, bezier = "linear",       style = "fade" })
+--
+-- hl.animation({ leaf = "workspaces",    enabled = true, speed = 3.0, bezier = "snap", style = "slidevert" })
+--
+-- hl.animation({ leaf = "fadeLayersIn",  enabled = true, speed = 1.5, bezier = "almostLinear" })
+-- hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.2, bezier = "almostLinear" })
+--
+-- hl.animation({ leaf = "zoomFactor",    enabled = true, speed = 5,   bezier = "quick" })
 
-hl.animation({ leaf = "global",        enabled = true, speed = 6,   bezier = "default" })
+-- Curves
+hl.curve("expressiveFastSpatial", {
+    type = "bezier",
+    points = {{0.42, 1.67}, {0.21, 0.90}}
+})
+hl.curve("expressiveSlowSpatial", {
+    type = "bezier",
+    points = {{0.39, 1.29}, {0.35, 0.98}}
+})
+hl.curve("expressiveDefaultSpatial", {
+    type = "bezier",
+    points = {{0.38, 1.21}, {0.22, 1.00}}
+})
+hl.curve("emphasizedDecel", {
+    type = "bezier",
+    points = {{0.05, 0.7}, {0.1, 1}}
+})
+hl.curve("emphasizedAccel", {
+    type = "bezier",
+    points = {{0.3, 0}, {0.8, 0.15}}
+})
+hl.curve("standardDecel", {
+    type = "bezier",
+    points = {{0, 0}, {0, 1}}
+})
+hl.curve("menu_decel", {
+    type = "bezier",
+    points = {{0.1, 1}, {0, 1}}
+})
+hl.curve("menu_accel", {
+    type = "bezier",
+    points = {{0.52, 0.03}, {0.72, 0.08}}
+})
+hl.curve("stall", {
+    type = "bezier",
+    points = {{1, -0.1}, {0.7, 0.85}}
+})
+-- Configs
+-- windows
+hl.animation({
+    leaf = "windowsIn",
+    enabled = true,
+    speed = 1.5,
+    bezier = "emphasizedDecel",
+    style = "gnomed"
+})
+hl.animation({
+    leaf = "fadeIn",
+    enabled = true,
+    speed = 3,
+    bezier = "emphasizedDecel"
+})
+hl.animation({
+    leaf = "windowsOut",
+    enabled = true,
+    speed = 1.5,
+    bezier = "emphasizedDecel",
+    style = "popin 90%"
+})
+hl.animation({
+    leaf = "fadeOut",
+    enabled = true,
+    speed = 2,
+    bezier = "emphasizedDecel"
+})
+hl.animation({
+    leaf = "windowsMove",
+    enabled = true,
+    speed = 3,
+    bezier = "emphasizedDecel",
+    style = "slide"
+})
+hl.animation({
+    leaf = "border",
+    enabled = true,
+    speed = 10,
+    bezier = "emphasizedDecel"
+})
 
-hl.animation({ leaf = "border",        enabled = true, speed = 4,   bezier = "easeOutQuint" })
-
-hl.animation({ leaf = "windows",       enabled = true, speed = 1.2, bezier = "easeInOutCubic"})
-hl.animation({ leaf = "windowsIn",     enabled = true, speed = 1.2, bezier = "easeInOutCubic", style = "slide" })
-hl.animation({ leaf = "windowsOut",    enabled = true, speed = 2.5, bezier = "easeOutQuint",   style = "slide" })
-
-hl.animation({ leaf = "fadeIn",        enabled = true, speed = 1.5, bezier = "almostLinear" })
-hl.animation({ leaf = "fadeOut",       enabled = true, speed = 1.2, bezier = "almostLinear" })
-hl.animation({ leaf = "fade",          enabled = true, speed = 2.5, bezier = "quick" })
-
-hl.animation({ leaf = "layers",        enabled = true, speed = 3,   bezier = "easeOutQuint" })
-hl.animation({ leaf = "layersIn",      enabled = true, speed = 3,   bezier = "easeOutQuint", style = "slide" })
-hl.animation({ leaf = "layersOut",     enabled = true, speed = 1.2, bezier = "linear",       style = "fade" })
-
-hl.animation({ leaf = "workspaces",    enabled = true, speed = 3.0, bezier = "snap", style = "slidevert" })
-
-hl.animation({ leaf = "fadeLayersIn",  enabled = true, speed = 1.5, bezier = "almostLinear" })
-hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.2, bezier = "almostLinear" })
-
-hl.animation({ leaf = "zoomFactor",    enabled = true, speed = 5,   bezier = "quick" })
+-- layers
+hl.animation({
+    leaf = "layersIn",
+    enabled = true,
+    speed = 2.5,
+    bezier = "emphasizedDecel",
+    style = "slide"
+})
+hl.animation({
+    leaf = "layersOut",
+    enabled = true,
+    speed = 1.2,
+    bezier = "menu_accel",
+    style = "slide"
+})
+-- fade
+hl.animation({
+    leaf = "fadeLayersIn",
+    enabled = true,
+    speed = 0.5,
+    bezier = "menu_decel"
+})
+hl.animation({
+    leaf = "fadeLayersOut",
+    enabled = true,
+    speed = 2.7,
+    bezier = "stall"
+})
+-- workspaces
+hl.animation({
+    leaf = "workspaces",
+    enabled = true,
+    speed = 7,
+    bezier = "menu_decel",
+    style = "slidevert"
+})
+-- specialWorkspace
+hl.animation({
+    leaf = "specialWorkspaceIn",
+    enabled = true,
+    speed = 2.8,
+    bezier = "emphasizedDecel",
+    style = "fade"
+})
+hl.animation({
+    leaf = "specialWorkspaceOut",
+    enabled = true,
+    speed = 1.2,
+    bezier = "emphasizedAccel",
+    style = "fade"
+})
+-- zoom
+hl.animation({
+    leaf = "zoomFactor",
+    enabled = true,
+    speed = 3,
+    bezier = "standardDecel"
+})

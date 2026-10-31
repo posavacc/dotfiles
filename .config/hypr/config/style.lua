@@ -17,7 +17,7 @@ hl.config({
 
         allow_tearing = false,
 
-        layout = "dwindle",
+        layout = "scrolling",
     },
 
     decoration = {

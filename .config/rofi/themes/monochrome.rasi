@@ -1,10 +1,9 @@
 * {
-  /* transparent
-  fg: #ffffffD9;
-  bg: #080808D9;
-  fg-alt: #a6a6a6D9;
-  grey: #383838F2;
-  */
+  /* transparent */
+  // fg: #ffffffD9;
+  // bg: #080808D9;
+  // fg-alt: #a6a6a6D9;
+  // grey: #383838F2;
 
   /* opaque */
   fg: #ffffff;

@@ -1,0 +1,91 @@
+* {
+  /* transparent */
+  fg: #B4BDC3D9;
+  bg: #1C1917D9;
+  fg-alt: #8A9399D9;
+  grey: #3B3532F2;
+
+  /* opaque */
+  // fg: #B4BDC3;
+  // bg: #1C1917;
+  // fg-alt: #8A9399;
+  // grey: #3B3532;
+  accent: #B77E64;
+
+  background-color: @bg;
+  color: @fg-alt;
+
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  spacing: 0;
+}
+
+window {
+  width: 32%;
+}
+
+inputbar {
+  padding: 12px;
+  spacing: 10px;
+  children: [prompt, entry];
+}
+
+message {
+  padding: 12px;
+  background-color: @grey;
+}
+
+textbox {
+  background-color: inherit;
+}
+
+prompt {
+  text-color: @accent;
+  background-color: inherit;
+}
+
+entry {
+  text-color: @accent;
+  placeholder: "";
+  placeholder-color: @grey;
+  background-color: inherit;
+}
+
+listview {
+  lines: 3;
+  fixed-height: false;
+  scrollbar: false;
+ // enabled: false;
+}
+
+element selected {
+  background-color: @grey;
+  text-color: @fg;
+}
+
+element-icon {
+  size: 30px;
+  background-color: inherit;
+}
+
+element-text {
+  background-color: inherit;
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element {
+  padding: 12px;
+  spacing: 12px;
+}
+
+mainbox,
+inputbar,
+listview,
+textbox,
+element,
+element-text {
+    background-color: transparent;
+}

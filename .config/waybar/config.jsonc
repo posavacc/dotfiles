@@ -5,10 +5,10 @@
 	"margin": "0 0 0 0",
 	"height": 24,
 	"modules-left": [
-		"niri/workspaces"
+		"hyprland/workspaces"
 	],
 	"modules-center": [
-		"niri/window"
+		"hyprland/window"
 	],
 	"modules-right": [
 		"tray",
@@ -58,7 +58,7 @@
 		"max-length": 10
 	},
 
-	"niri/submap": {
+	"hyprland/submap": {
 		"format": "submap: {}",
 		"always-on": true,
 		"default-submap": "default"

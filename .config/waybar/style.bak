@@ -1,0 +1,121 @@
+@define-color bg #0f0f0f;
+@define-color fg #a6a6a6;
+@define-color urgent #f52a2a;
+@define-color accent #F6CE4E;
+
+* {
+	padding: 0;
+    margin: 0;
+	border: none;
+    font-family: "CommitMono Nerd Font";
+	min-height: 0;
+	box-shadow: none;
+    border-radius: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    text-shadow: none;
+}
+
+tooltip {
+    background: #1a1a1a;
+}
+
+tooltip label {
+    padding: 2px;
+    color: #FFFFFF;
+}
+
+#waybar {
+    /* background: alpha(@bg, 0.00); */
+    background: alpha(@bg, 1.00);
+    /*border-bottom: 2px solid #d9ba73;*/
+}
+
+window#waybar {
+}
+
+#workspaces {
+    margin-left: 4px;
+}
+
+#workspaces button.urgent {
+    color: @fg;
+    background: @urgent;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    transition: all 200ms ease-in-out;
+    min-width: 0px;
+    color: alpha(@fg, 0.8);
+    background: alpha(@fg, 0.2);
+    margin: 4px 1px;
+}
+
+#workspaces button.empty {
+    color: alpha(@fg, 0.15);
+    background: alpha(@fg, 0.1);
+}
+
+#workspaces button.visible {
+    color: @bg;
+    background: @accent;
+}
+
+#workspaces button.active {
+    color: @bg;
+    background: @accent;
+}
+
+#workspaces button:hover {
+    background: alpha(@fg, 1.0);
+    font-weight: 600;
+    color: @bg;
+}
+
+#window {
+    color: alpha(@fg, 0.5);
+}
+
+#pulseaudio, #cpu, #tray, #memory {
+    color: alpha(@fg, 0.78);
+}
+
+#pulseaudio, #cpu, #memory {
+    margin: 0 8px;
+    transition: all 150ms ease-in-out;
+}
+
+#tray {
+    color: #ffffff;
+    margin: 0px 10px;
+}
+
+#clock {
+    /* color: #e09d28; */
+    /* color: #bb86fc; */
+    color: @accent;
+    /* text-decoration: underline; */
+    font-weight: 500;
+    /* margin-top: 4px; */
+    border-radius: 10px;
+    padding: 0px 8px;
+    transition: all 150ms ease-in-out;
+}
+
+#clock:hover {
+    background-color: @accent;
+    color: @bg;
+}
+
+#cpu {
+    margin-left: 8px;
+}
+
+#memory {
+    margin-right: 5px;
+}
+
+#cpu:hover, #memory:hover, #pulseaudio:hover {
+    color: #e0e0e0;
+}

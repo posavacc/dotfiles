@@ -16,7 +16,6 @@ return {
     },
 }
 
-]]
 return {
     "oskarnurm/koda.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -44,4 +43,14 @@ return {
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
         vim.api.nvim_set_hl(0, 'CursorLineNr', { fg='#ffdd33', bold=false })
     end,
+}
+
+]]
+-- Lazy
+return {
+  "mcchrish/zenbones.nvim",
+  dependencies = { "rktjmp/lush.nvim" },
+  config = function()
+    vim.cmd.colorscheme("zenbones")
+  end
 }
