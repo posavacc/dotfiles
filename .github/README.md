@@ -1,7 +1,12 @@
 # Dotfiles
 
-<img src="images/empty-workspace.png" width="49%">
-<img src="images/rofi.png" width="49%">
-
-<img src="images/neovim.png" width="49%">
-<img src="images/neovim-rust.png" width="49%">
+<table>
+  <tr>
+    <td><img src="images/empty-workspace.png"></td>
+    <td><img src="images/rofi.png"></td>
+  </tr>
+  <tr>
+    <td><img src="images/neovim.png"></td>
+    <td><img src="images/neovim-rust.png"></td>
+  </tr>
+</table>
