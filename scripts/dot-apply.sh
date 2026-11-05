@@ -15,14 +15,20 @@ read -r -p "Choose the desired wm
 1) hyprland
 2) niri
 3) sway
+4) NONE
+5) ALL
 wm number: " num
 
-if [ $num == 1 ]; then
+if [[ $num == 1 ]]; then
 	wm="hypr"
-elif [ $num == 2 ]; then
+elif [[ $num == 2 ]]; then
 	wm="niri"
-elif [ $num == 3 ]; then
+elif [[ $num == 3 ]]; then
 	wm="sway"
+elif [[ $num == 4 ]]; then
+	wm="NONE"
+elif [[ $num == 5 ]]; then
+	wm="ALL"
 else
 	echo "Please enter a digit from 1 to 3."
 	exit 1
@@ -31,8 +37,16 @@ fi
 # make sure .config exists
 mkdir -p $HOME/.config
 
-rm -rf "$HOME/.config/$wm"
-ln -s "$HOME/dotfiles/.config/$wm" "$HOME/.config/$wm"
+if [[ "$wm" == "ALL" ]]; then
+	rm -rf "$HOME/.config/hypr"
+	ln -s "$HOME/dotfiles/.config/hypr" "$HOME/.config/hypr"
+
+	rm -rf "$HOME/.config/niri"
+	ln -s "$HOME/dotfiles/.config/niri" "$HOME/.config/niri"
+
+	rm -rf "$HOME/.config/sway"
+	ln -s "$HOME/dotfiles/.config/sway" "$HOME/.config/sway"
+fi
 
 rm -rf "$HOME/.config/tmux"
 ln -s "$HOME/dotfiles/.config/tmux" "$HOME/.config/tmux"
