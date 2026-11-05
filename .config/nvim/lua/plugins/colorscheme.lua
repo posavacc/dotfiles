@@ -17,6 +17,19 @@ return {
 }
 
 return {
+  "mcchrish/zenbones.nvim",
+  dependencies = { "rktjmp/lush.nvim" },
+  config = function()
+      vim.cmd.colorscheme("zenbones")
+      vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+      vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+      vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+  end
+}
+
+]]
+-- Lazy
+return {
     "oskarnurm/koda.nvim",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
@@ -32,7 +45,7 @@ return {
             },
 
             colors = {
-                const = "#F6CE4E"
+                const = "#E6B450"
             }
         })
 
@@ -43,17 +56,4 @@ return {
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
         vim.api.nvim_set_hl(0, 'CursorLineNr', { fg='#ffdd33', bold=false })
     end,
-}
-
-]]
--- Lazy
-return {
-  "mcchrish/zenbones.nvim",
-  dependencies = { "rktjmp/lush.nvim" },
-  config = function()
-      vim.cmd.colorscheme("zenbones")
-      vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-      vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-      vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-  end
 }
