@@ -132,16 +132,49 @@ hotkey-overlay {
 screenshot-path null
 
 animations {
-    window-resize {
-        duration-ms 175
+    window-open {
+        duration-ms 150
+        curve "cubic-bezier" 0.05 0.7 0.1 1
     }
 
-    workspace-switch {
-        duration-ms 175
+    window-close {
+        duration-ms 150
+        curve "cubic-bezier" 0.05 0.7 0.1 1
+    }
+
+    window-movement {
+        duration-ms 300
+        curve "cubic-bezier" 0.05 0.7 0.1 1
     }
 
     horizontal-view-movement {
-        duration-ms 200
+        duration-ms 300
+        curve "cubic-bezier" 0.05 0.7 0.1 1
+    }
+
+    window-resize {
+        duration-ms 300
+        curve "cubic-bezier" 0.05 0.7 0.1 1
+    }
+
+    workspace-switch {
+        duration-ms 700
+        curve "cubic-bezier" 0.1 1 0 1
+    }
+
+    overview-open-close {
+        duration-ms 400
+        curve "cubic-bezier" 0.05 0.7 0.1 1
+    }
+
+    screenshot-ui-open {
+        duration-ms 300
+        curve "cubic-bezier" 0.42 1.67 0.21 0.9
+    }
+
+    config-notification-open-close {
+        duration-ms 300
+        curve "cubic-bezier" 0.42 1.67 0.21 0.9
     }
 }
 
