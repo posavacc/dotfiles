@@ -1,0 +1,19 @@
+configuration {
+  display-drun: ">";
+  drun-displayu-format: "{name}";
+  font: "CommitMono Nerd Font Mono Medium 15";
+  icon-theme: "Papirus";
+  //show-icons: true;
+  modi: "drun";
+
+  matching: "normal";
+
+  /*
+  sort: true;
+  sorting-method: "levenshtein";
+  */
+}
+
+// 
+
+@theme "/themes/monochrome.rasi"
