@@ -22,6 +22,7 @@ eval "$(starship init zsh)"
 bindkey '^ ' autosuggest-accept
 
 alias vi="nvim"
+alias dot="git --git-dir=$HOME/dotfiles/.git --work-tree=$HOME/dotfiles"
 
 mkcd() {
 	mkdir -p "$1" && cd "$1"
