@@ -11,8 +11,11 @@ if [[ "$dir" != "$HOME/dotfiles" ]]; then
 	exit 1
 fi
 
-printf "Choose only one:\n1) hyprland\n2) niri\n3) sway"
-read -r -p "1) hyprland\n2) niri\n3) sway\nwm number:\n" num
+read -r -p "Choose the desired wm
+1) hyprland
+2) niri
+3) sway
+wm number: " num
 
 if [ $num == 1 ]; then
 	wm="hypr"
