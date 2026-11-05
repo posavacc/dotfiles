@@ -74,6 +74,7 @@ layout {
     // }
 
     center-focused-column "never"
+    always-center-single-column
 
     background-color "transparent"
 
@@ -212,14 +213,6 @@ window-rule {
         active-color "#d9ba73"
         inactive-color "#383838"
     }
-}
-
-window-rule {
-    match is-active=false
-    shadow {
-        off
-    }
-    opacity 0.95
 }
 
 window-rule {
