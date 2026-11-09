@@ -73,6 +73,16 @@ hl.window_rule({
 })
 
 hl.window_rule({
+    name = "1.0 width gimp",
+    match = {
+        class = "^gimp$",
+        title = "^GNU Image Manipulation Program$",
+    },
+
+    scrolling_width = 1.0
+})
+
+hl.window_rule({
     name = "1.0 width obsidian",
     match = {
         class = "^md.obsidian.Obsidian$",
