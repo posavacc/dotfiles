@@ -63,10 +63,18 @@
 		"always-on": true,
 		"default-submap": "default"
 	},
+
 	"ext/workspaces": {
 		"format": "{name}",
 		"on-click": "activate",
 		"on-click-right": "deactivate",
 		"sort-by-id": true
+	},
+
+	"niri/window": {
+		"format": "{}",
+		"rewrite": {
+			"(.*) — Zen Browser": "$1"
+		}
 	}
 }

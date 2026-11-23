@@ -179,13 +179,6 @@ animations {
     }
 }
 
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
-
-    block-out-from "screen-capture"
-}
-
 blur {
     passes 3
     offset 2.0
@@ -213,6 +206,14 @@ window-rule {
         active-color "#d9ba73"
         inactive-color "#383838"
     }
+}
+
+window-rule {
+    match app-id="^org.vinegarhq.Sober$"
+
+    variable-refresh-rate true
+
+    open-fullscreen true
 }
 
 window-rule {
@@ -283,6 +284,8 @@ window-rule {
 
 window-rule {
     match app-id="^steam_app_252950$"
+
+    variable-refresh-rate true
 
     open-on-output "DP-2"
 }
