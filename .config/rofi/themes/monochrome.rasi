@@ -1,15 +1,15 @@
 * {
   /* transparent */
-  fg: #ffffffcc;
-  bg: #080808cc;
-  fg-alt: #a6a6a6cc;
-  grey: #383838F2;
+  // fg: #ffffffcc;
+  // bg: #080808cc;
+  // fg-alt: #a6a6a6cc;
+  // grey: #383838F2;
 
   /* opaque */
-  // fg: #ffffff;
-  // bg: #111111;
-  // fg-alt: #a6a6a6;
-  // grey: #383838;
+  fg: #ffffff;
+  bg: #111111;
+  fg-alt: #a6a6a6;
+  grey: #383838;
 
   background-color: @bg;
   color: @fg-alt;

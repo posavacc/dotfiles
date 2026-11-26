@@ -5,10 +5,10 @@
 	"margin": "0 0 0 0",
 	"height": 24,
 	"modules-left": [
-		"niri/workspaces"
+		"niri/workspaces",
+		"niri/window"
 	],
 	"modules-center": [
-		"niri/window"
 	],
 	"modules-right": [
 		"tray",
@@ -72,9 +72,9 @@
 	},
 
 	"niri/window": {
-		"format": "{}",
+		"format": " > {}",
 		"rewrite": {
-			"(.*) — Zen Browser": "$1"
+			"(.*) — Mozilla Firefox": "$1"
 		}
 	}
 }

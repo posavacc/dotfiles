@@ -45,7 +45,10 @@ return {
             },
 
             colors = {
-                const = "#E6B450"
+                -- lembra q o CursorLineNr deve ter a mesma cor
+
+                -- const = "#E6B450"
+                const = "#FFBF00"
             }
         })
 
@@ -54,6 +57,6 @@ return {
         vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
         vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-        vim.api.nvim_set_hl(0, 'CursorLineNr', { fg='#ffdd33', bold=false })
+        vim.api.nvim_set_hl(0, 'CursorLineNr', { fg='#FFBF00', bold=false })
     end,
 }

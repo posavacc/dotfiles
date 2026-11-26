@@ -240,12 +240,19 @@ window-rule {
 }
 
 window-rule {
+    match app-id="^Godot$"
+
+    open-maximized true
+}
+
+window-rule {
     match app-id="^steam$" title="^Steam$"
 
-    /*
-    open-on-output "HDMI-A-1"
-    open-focused false
-    */
+    open-maximized true
+}
+
+window-rule {
+    match app-id="^heroic$"
 
     open-maximized true
 }
@@ -271,7 +278,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="zen"
+    match app-id="^firefox$"
 
     open-maximized true
 }
@@ -312,7 +319,7 @@ window-rule {
     open-maximized true
 }
 
-layer-rule {
+/-layer-rule {
     match namespace="^rofi$"
 
     background-effect {
@@ -335,7 +342,7 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application: rofi" { spawn "rofi" "-show" "drun"; }
     //Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Mod+Return hotkey-overlay-title="Rofi calc" { spawn-sh "rofi -show calc -modi calc -no-show-match -no-sort -theme ~/.config/rofi/calc.rasi"; }
-    Mod+Q { spawn "zen-browser"; }
+    Mod+Q { spawn "firefox"; }
     Mod+Shift+W { spawn-sh "/home/breno/.config/waybar/scripts/launch.sh"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }

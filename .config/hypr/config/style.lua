@@ -52,6 +52,6 @@ hl.config({
         explicit_column_widths = "0.5, 1.0",
         wrap_focus = false,
         wrap_swapcol = false,
-        follow_min_visible = 0.1,
+        follow_min_visible = 0.0,
     },
 })

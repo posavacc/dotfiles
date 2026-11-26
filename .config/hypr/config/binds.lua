@@ -7,7 +7,7 @@ hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind("CTRL + ALT + DELETE", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("zen-browser"))
+hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("firefox"))
 
 -- SCROLLING --
 hl.bind(mainMod .. " + h", hl.dsp.layout("focus left"))

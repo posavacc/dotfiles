@@ -53,20 +53,30 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "1.0 noctalia settings",
+    name = "1.0 steam",
     match = {
-        class = "^dev.noctalia.Noctalia$",
-        title = "^Noctalia Settings$",
+        class = "^steam$",
+        title = "^Steam$",
     },
 
     scrolling_width = 1.0
 })
 
 hl.window_rule({
-    name = "1.0 width zen browser",
+    name = "1.0 spotify",
     match = {
-        class = "^zen$",
-        title = "^Zen Browser$",
+        class = "^Spotify$",
+        title = "^Spotify$",
+    },
+
+    scrolling_width = 1.0
+})
+
+hl.window_rule({
+    name = "1.0 width firefox",
+    match = {
+        class = "^firefox$",
+        title = "^Mozilla Firefox$",
     },
 
     scrolling_width = 1.0
@@ -83,15 +93,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name = "1.0 width obsidian",
-    match = {
-        class = "^md.obsidian.Obsidian$",
-    },
-
-    scrolling_width = 1.0
-})
-
-hl.window_rule({
     name = "macroquad floating",
     match = {
         class = "^miniquad-application$"
@@ -102,22 +103,12 @@ hl.window_rule({
     move = { "monitor_w * 0.5 - window_w * 0.5", "monitor_h * 0.5 - window_h * 0.5" }
 })
 
-hl.layer_rule({
-    name = "noctalia blur",
-    match = {
-        namespace = "noctalia-bar-default",
-    },
-
-    blur = true,
-    ignore_alpha = 0.8
-})
-
-hl.layer_rule({
-    name = "rofi blur",
-    match = {
-        namespace = "rofi",
-    },
-
-    blur = true,
-    -- ignore_alpha = 0.8
-})
+-- hl.layer_rule({
+--     name = "rofi blur",
+--     match = {
+--         namespace = "rofi",
+--     },
+--
+--     blur = true,
+--     -- ignore_alpha = 0.8
+-- })

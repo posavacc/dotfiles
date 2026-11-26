@@ -13,6 +13,12 @@ vim.lsp.config("lua_ls", {
     },
 })
 
+vim.lsp.config("gdscript", {
+    cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+    filetypes = { "gdscript" },
+    root_markers = { "project.godot", ".git" },
+})
+
 vim.diagnostic.config({
   virtual_text = {
       severity = { min = vim.diagnostic.severity.ERROR }
@@ -39,6 +45,7 @@ vim.lsp.enable("lua_ls")
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("ols")
 vim.lsp.enable("clangd")
+vim.lsp.enable("gdscript")
 
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(event)
