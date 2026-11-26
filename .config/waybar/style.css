@@ -2,7 +2,8 @@
 @define-color fg #a6a6a6;
 @define-color urgent #f52a2a;
 /* @define-color accent #E6B450; */
-@define-color accent #FFBF00;
+/* @define-color accent #FFBF00; */
+@define-color accent #EFAF45;
 
 * {
 	padding: 0;

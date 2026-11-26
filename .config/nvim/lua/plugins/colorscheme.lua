@@ -1,3 +1,5 @@
+local accent_color = "#EFAF45"
+
 --[[
 return {
     {
@@ -45,10 +47,7 @@ return {
             },
 
             colors = {
-                -- lembra q o CursorLineNr deve ter a mesma cor
-
-                -- const = "#E6B450"
-                const = "#FFBF00"
+                const = accent_color
             }
         })
 
@@ -57,6 +56,6 @@ return {
         vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
         vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-        vim.api.nvim_set_hl(0, 'CursorLineNr', { fg='#FFBF00', bold=false })
+        vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = accent_color, bold = false })
     end,
 }
